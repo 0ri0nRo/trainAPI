@@ -73,7 +73,7 @@
         }
 
         async function fetchTrainData(station) {
-            const response = await fetch(`http://localhost:5000/trains_data/${station}`);
+            const response = await fetch(`http://localhost:5000/trains_data/Colleferro`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
