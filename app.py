@@ -31,7 +31,7 @@ def get_trains_data(train_destination):
 
 
 # Route per servire la pagina HTML
-@app.route('/main', methods=['GET'])
+@app.route('/', methods=['GET'])
 def main():
     return render_template('main.html')
 
