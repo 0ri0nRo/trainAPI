@@ -1,4 +1,3 @@
-version: '3'
 services:
   web:
     build:
@@ -6,5 +5,5 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ./app:/app  # Assicurati che questa cartella contenga i tuoi file 'app.py', 'templates', e 'static'
+      - ./trains_data.json:/app/trains_data.json
     command: python app.py
